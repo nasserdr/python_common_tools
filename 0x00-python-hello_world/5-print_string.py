@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-str = "Holberton School"
-print('{:s}{:s}{:s}'.format(str, str, str))
-print('{:s}'.format(str[0:9]))
+str1 = "Holberton"
+str2 = "School"
+str1 = str1 + " " + str2
+print("Welcome to {}!".format(str1))
