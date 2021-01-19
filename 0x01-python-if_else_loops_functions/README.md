@@ -1,5 +1,5 @@
-# 0x00-python-hello_world
+# 0x01-python-if_else_loops_functions
 **Author: Hassan Nasser**
 
 **Description:**
-Contains codes for the Python fundamentals - Chapter Hello World
+Contains codes for the Python fundamentals - Chapter 2
