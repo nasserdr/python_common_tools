@@ -1,5 +1,6 @@
 def uppercase(str):
-    s = ''
-    for i in str:
-        s = s + chr(ord(i) + 26)
-    return s
+    result = ''
+    for char in str:
+        if ord(char) >= 65:
+            result += chr(ord(char) - 32)
+    return result
