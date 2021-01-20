@@ -11,7 +11,7 @@ def pow(a, b):
         return 1/pow
     else:
         pow = 1
-        while (b > 1):
+        while (b >= 1):
             pow *= a
             b -= 1
         return pow
