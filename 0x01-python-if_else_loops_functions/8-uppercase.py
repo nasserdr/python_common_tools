@@ -1,6 +1,8 @@
 def uppercase(str):
     result = ''
     for char in str:
-        if ord(char) >= 65:
+        if ord(char) >= 97 and ord(char) <= 123:
             result += chr(ord(char) - 32)
-    return result
+        else:
+            result += char
+    print(result)
