@@ -12,6 +12,8 @@ class Square:
             """ To initialize the size of the squere"""
             self.__size = size
     except TypeError:
+        """ throw a type error """
         print('size must be an integer')
     except ValueError:
+        """ Throw a ValueError """
         print('size must be >= 0')
