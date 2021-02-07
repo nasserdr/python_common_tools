@@ -2,6 +2,6 @@
 def uniq_add(my_list=[]):
     sum = my_list[0]
     for i in range(1, len(my_list)):
-        if my_list[i] not in my_list[0:i]:
+        if my_list[i] not in my_list[0:i-1]:
             sum += my_list[i]
     return sum
