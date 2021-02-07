@@ -11,4 +11,5 @@ def list_division(my_list_1, my_list_2, list_length):
         except TypeError:
             print('wrong type')
         finally:
-            return(new_list)
+            new_list[i] = new_list[i]
+    return new_list
