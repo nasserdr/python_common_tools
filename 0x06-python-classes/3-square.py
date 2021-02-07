@@ -25,4 +25,7 @@ class Square:
             print('size must be an integer')
 
     def area(self):
+        """
+        returns the area
+        """
         return self.__size**2
