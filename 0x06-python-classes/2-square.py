@@ -14,12 +14,12 @@ class Square:
         To initialize the size of the square
         """
         try:
-            self.__size = size
-            if type(self.__size) is not int or type(self.__size) is not float:
+            if type(size) is not int:
                 raise TypeError
-            if self.__size < 0:
+            if size < 0:
                 raise ValueError
+            self.__size = size
         except ValueError:
-            print('size must be >= 0')
+            print('size must be >0')
         except TypeError:
             print('size must be an integer')
