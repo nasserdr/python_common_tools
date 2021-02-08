@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+from calculator_1 import add, sub, mul, div
 if __name__ == "__main__":
     if len(sys.argv) == 4:
         a = sys.argv[1]
@@ -14,10 +15,10 @@ if __name__ == "__main__":
         sys.exit(1)
     else:
         if op == '+':
-            print('{:d} + {:d} = {:d}'.format(a, b, add(a,b))
+            print('{} + {} = {}'.format(a, b, add(a, b)))
         elif op == '-':
-            print('{:d} - {:d} = {:d}'.format(a, b, sub(a,b))
+            print('{} - {} = {}'.format(a, b, sub(a, b)))
         elif op == '*':
-            print('{:d} * {:d} = {:d}'.format(a, b, mul(a,b))
+            print('{} * {} = {}'.format(a, b, mul(a, b)))
         else:
-            print('{:d} / {:d} = {:d}'.format(a, b, div(a,b))
+            print('{} / {} = {}'.format(a, b, div(a, b)))
