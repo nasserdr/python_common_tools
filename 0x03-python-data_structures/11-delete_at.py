@@ -10,4 +10,4 @@ def delete_at(my_list=[], idx=0):
                 i = i + 1
             else:
                 new_list.append(my_list[i])
-        return my_list
+        return new_list
