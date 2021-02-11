@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""
+ class to define a rectange
+"""
+
+
 class Rectangle:
     """
-    Defines and empty rectangle
+    defines the square class
     """
     pass
