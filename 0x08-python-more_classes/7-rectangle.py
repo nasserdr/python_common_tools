@@ -9,7 +9,7 @@ class Rectangle:
     defines the square class
     """
     number_of_instances = 0
-    print_symbol = "#"
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """
@@ -76,7 +76,7 @@ class Rectangle:
         s = ''
         for i in range(0, self.__height):
             for j in range(0, self.__width):
-                s += Rectangle.print_symbol
+                s += str(self.print_symbol)
             s += "\n"
         return s[:-1]
 
@@ -92,3 +92,4 @@ class Rectangle:
         """
         print("Bye rectangle...")
         Rectangle.number_of_instances += -1
+        
