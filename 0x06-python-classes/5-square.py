@@ -40,12 +40,8 @@ class Square:
         """
         return self.__size**2
 
-
     def my_print(self):
-        """
-        print the # in squares
-        """
-        if self.__size==0:
+        if self.__size == 0:
             print("\n")
         else:
             for i in range(0, self.__size):
