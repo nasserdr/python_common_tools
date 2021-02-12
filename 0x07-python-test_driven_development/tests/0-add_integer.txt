@@ -1,15 +1,19 @@
-The ``example`` module
-======================
+>>> from 0-add_integer.py import add_integer
 
-Using ``factorial``
--------------------
+>>> add_integer(1, 2)
+    3
 
-This is an example text file in reStructuredText format.  First import
-``factorial`` from the ``example`` module:
+>>> add_integer(100, -2)
+    98
 
-    >>> from example import factorial
+>>> add_integer(2)
+    100
 
-Now use it:
+>>> add_integer(100.3, -2)
+    98
 
-    >>> factorial(6)
-    120
+>>> add_integer(4, "School")
+    b must be an integer
+
+>>> add_integer(None)
+    a must be an integer
