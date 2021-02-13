@@ -1,0 +1,14 @@
+The ``2-matrix_divided`` module
+===============================
+
+Using ``matrix_divided``
+------------------------
+
+First import ``matrix_divided`` from the ``2-matrix_divided`` module:
+
+    >>> from 2-matrix_divided import matrix_divided
+
+Now use it:
+
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
