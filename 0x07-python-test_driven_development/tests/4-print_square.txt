@@ -1,0 +1,34 @@
+The ``4-print_square`` module
+=============================
+
+Using ``print_square``
+----------------------
+
+    >>> print_square = __import__('4-print_square').print_square
+
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+    >>> print_square(0)
+
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+    >>> print_square(-1)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "/home/vagrant/0x07/4-print_square.py", line 13, in print_square
+        raise ValueError("size must be >= 0")
+    ValueError: size must be >= 0
