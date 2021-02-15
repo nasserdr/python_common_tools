@@ -7,5 +7,5 @@ class MyList(list):
         """
         Returns list in ascending order
         """      
-        self.sort()
-        print(self)
+        new = sorted(self)
+        print(new)
