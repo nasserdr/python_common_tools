@@ -1,0 +1,28 @@
+The ``1-my_list`` module
+========================
+
+Using ``print_sorted``
+---------------------
+
+This is an example text file in reStructuredText format.  First import
+``factorial`` from the ``example`` module:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Now use it:
+
+
+    >>> MyList.print_sorted([1, 2, 3, 4, 5])
+    [1, 2, 3, 4, 5]
+
+    >>> MyList.print_sorted([8, 2, 3, 4, 1])
+    [1, 2, 3, 4, 8]
+
+    >>> MyList.print_sorted([1, 2, 5, 4, 3])
+    [1, 2, 3, 4, 5]
+
+    >>> MyList.print_sorted([-1, 2, 3, 4, 5])
+    [-1, 2, 3, 4, 5]
+
+    >>> MyList.print_sorted([-1, -2, -3, -4, -5])
+    [-5, -4, -3, -2, -1]
