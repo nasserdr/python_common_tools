@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Sorting a list
+Sorting a list in ascending order via inheritance from the class list
 """
 
 
