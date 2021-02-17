@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-"""
-The geometry class
-"""
-
-
 class BaseGeometry:
     """
     Geometry class
@@ -13,6 +8,6 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         if type(value) is not int:
-            raise TypeError("<name> must be an integer")
-        if value < 0:
-            raise ValueError("<name> must be greater than 0")
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
