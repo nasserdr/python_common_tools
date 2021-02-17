@@ -14,4 +14,3 @@ class MyList(list):
         """
         new = sorted(self)
         print(new)
-        return new
