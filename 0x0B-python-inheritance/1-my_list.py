@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-"""
-Sorting a list in ascending order via inheritance from the class list
-"""
-
-
 class MyList(list):
     """
     The MyList Class
@@ -14,3 +9,4 @@ class MyList(list):
         """
         new = sorted(self)
         print(new)
+        return new
