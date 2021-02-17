@@ -13,9 +13,12 @@ class Square(Rectangle):
         """
         Initializing the class
         """
-        Rectangle.__init__(self, size, size)
-        self.__size = size
-        self.__size = size
+        try:
+            Rectangle.__init__(self, size, size)
+            self.__size = size
+            self.__size = size
+        except Exception as e:
+            print("[{}] {}".format(e.__class__.__name__, e))
 
     def area(self):
         """
