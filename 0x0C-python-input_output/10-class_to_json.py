@@ -8,7 +8,4 @@ def class_to_json(obj):
     """
     Return a json of obj
     """
-    try:
-        return obj.toJSON()
-    except:
-        return obj.__dict__
+    return json.loads(json.dumps(obj.__dict__))
