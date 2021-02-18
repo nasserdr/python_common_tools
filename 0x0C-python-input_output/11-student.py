@@ -2,8 +2,7 @@
 """
 The student class
 """
-import json
-
+class_to_json = __import__('10-class_to_json').class_to_json
 
 class Student:
     """
@@ -21,5 +20,5 @@ class Student:
     def to_json(self):
         """
         Transforms to json
-        """"
-        return json.loads(json.dumps(self.__dict__))
+        """
+        return class_to_json(self)
