@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Append every 2 arguments as key/value into a file containing a
+Append every 2 arguments as key/value into a file containing a 
 object
 """
 import json
@@ -12,12 +12,11 @@ filename = 'add_item.json'
 
 try:
     my_list = load_from_json_file(filename)
-    print("I read the list")
 except Exception:
     my_list = []
-    print("I am creating the list for the first time")
 
 for arg in sys.argv[1:]:
     my_list.append(arg)
 
 save_to_json_file(my_list, filename)
+        
