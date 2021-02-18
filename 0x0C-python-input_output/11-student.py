@@ -21,5 +21,7 @@ class Student:
         """
         Transforms to json
         """
-        class_to_json = __import__('10-class_to_json').class_to_json
-        return class_to_json(self)
+        return {
+            'first_name':self.first_name, 
+            'last_name': self.last_name,
+            'age': self.age}
