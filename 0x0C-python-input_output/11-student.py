@@ -2,7 +2,7 @@
 """
 The student class
 """
-class_to_json = __import__('10-class_to_json').class_to_json
+
 
 class Student:
     """
@@ -21,4 +21,5 @@ class Student:
         """
         Transforms to json
         """
+        class_to_json = __import__('10-class_to_json').class_to_json
         return class_to_json(self)
