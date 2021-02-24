@@ -139,23 +139,6 @@ class Rectangle(Base):
         if(self.__y) > 0:
             print(" ", end='')
 
-
-    # def update(self, *args):
-    #     """
-    #     update the rectangle attributes using args
-    #     """
-    #     if len(args) >= 1:
-    #         self.id = args[0]
-    #     if len(args) > 1:
-    #         self.width = args[1]
-    #     if len(args) > 2:
-    #         self.height = args[2]
-    #     if len(args) > 3:
-    #         self.x = args[3]
-    #     if len(args) > 4:
-    #         self.y = args[4]
- 
-
     def update(self, *args, **kwargs):
         """
         Update arguments from a key-value list
@@ -179,4 +162,9 @@ class Rectangle(Base):
         """
         Returns the dictionnary rep of the rectangle
         """
-        return {'x': self.__x, 'y': self.__y, 'id': self.id, 'height': self.__height, 'width': self.__width}
+        return {
+            'x': self.__x,
+            'y': self.__y,
+            'id': self.id,
+            'height': self.__height,
+            'width': self.__width}
