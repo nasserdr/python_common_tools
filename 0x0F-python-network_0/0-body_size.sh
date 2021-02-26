@@ -1,3 +1,3 @@
 #!/usr/bash
-URL= $0
+URL= $1
 curl -sI $URL | grep -i Content-Length
