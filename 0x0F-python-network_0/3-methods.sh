@@ -1,3 +1,3 @@
 #!/bin/bash
-# Sends a delete request to the link in first arg
+# Display the allowed methods
 curl -sI $1 | grep Allow | cut -c 8-
