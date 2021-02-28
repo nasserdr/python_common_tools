@@ -1,3 +1,3 @@
 #!/bin/bash
 # Check content length
-curl -o /dev/null -s -w "%{http_code}\n" $1
+curl -o /dev/null -s -w "%{size_download}\n" $1
