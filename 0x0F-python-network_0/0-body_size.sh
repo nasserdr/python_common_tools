@@ -1,3 +1,3 @@
 #!/bin/bash
 # Check content length
-curl -o /dev/null -s -w "%{http_code}" $1
+curl -sI "$1" | grep "Content-Length:" | cut -d' ' -f2
