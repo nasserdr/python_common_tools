@@ -1,5 +1,5 @@
-#holbertonschool-python
+# 0x10-python -network_1
 **Author: Hassan Nasser**
 
 **Description:**
-This folder contains the code for all the python chapters
+This is the readme of my first git repository 0x10-python -network_1
