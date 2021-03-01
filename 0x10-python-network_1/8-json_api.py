@@ -9,8 +9,14 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    try:
-        req = requests.get(sys.argv[1])
-        print(req.text)
-    except error.HTTPError:
-        print("Error code: {}".format(req.status_code))
+    if len(sys.argv) == 2:
+        payload = {'q': sys.argv[1]}
+        req = requests.post("http://0.0.0.0:5000/search_user", payload)
+        if req['content-type'] == 'application/json':
+            print(req.text)
+        elif req.text == "":
+            print("No result")
+        else:
+            print("Not a valid JSON")
+    else:
+        print("No result")
