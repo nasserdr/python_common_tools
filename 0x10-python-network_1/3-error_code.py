@@ -13,6 +13,5 @@ if __name__ == "__main__":
     try:
         with request.urlopen(argv[1]) as req:
             print(req.read().decode("utf-8"))
-    except error.HTTPError:
-        headers = req.info()
-        print("Error code: {}".format(headers.get('status_code')))
+    except error.HTTPError as ex:
+        print("Error code: {}".format(ex.code))
