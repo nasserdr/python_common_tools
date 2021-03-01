@@ -8,4 +8,5 @@ import sys
 
 if __name__ == "__main__":
     payload = {'email': argv[2]}
-    req = requests.post(argv[1], data=payload)
+    req = requests.post(argv[1], payload)
+    print(req.text)
