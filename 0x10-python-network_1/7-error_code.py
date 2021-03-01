@@ -7,5 +7,8 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    payload = {'email': argv[2]}
-    req = requests.post(argv[1], data=payload)
+    try:
+        req = requests.get(sys.argv[1])
+        print(req.text)
+    except error.HTTPError:
+        print("Error code: {}".format(req.status_code))
