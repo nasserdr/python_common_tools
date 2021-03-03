@@ -1,5 +1,5 @@
-# 0x11-utf8_validation
+# 0x12-SQL_introduction
 **Author: Hassan Nasser**
 
 **Description:**
-This is the readme of my first git repository 0x11-utf8_validation
+This is the readme of my first git repository 0x12-SQL_introduction
