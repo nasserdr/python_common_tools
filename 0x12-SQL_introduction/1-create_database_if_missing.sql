@@ -1,6 +1,6 @@
 /*
-* lists all databases of your MySQL server
+* create a new database
 */
 
-SHOW databases;
-/*Show all databases*/
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0
+/*create a database hbtn_0c_0*/
