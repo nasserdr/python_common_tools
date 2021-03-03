@@ -3,4 +3,4 @@
 */
 
 /*Show all databases*/
-SHOW DATABASES;
+SHOW databases;
