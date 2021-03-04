@@ -1,0 +1,1 @@
+-- Creates a user with read access

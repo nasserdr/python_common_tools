@@ -1,0 +1,2 @@
+-- priviliges
+FLUSH PRIVILIGES;
