@@ -1,3 +1,3 @@
 #!/bin/bash
-# Display the body only if it has a "200" response
-if [ $(curl -s -X GET 0.0.0.0:5000/route_1 -o /dev/null -w %{http_code}) -eq 200 ]; then curl -sb 0.0.0.0:5000/route_1; fi; 
+# This program takes in a URL, sends a GET request to the URL, and displays the body of the response.
+curl -sL "$1" -X GET -D ./header -o ./output; if grep -q "200 OK" ./header; then cat ./output; fi

@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-"""
-Python script that posts an email
+"""Takes in a URL, sends a request to the URL and
+displays the body of the response (decoded in utf-8)
+with `requests` module.
 """
 
+from sys import argv
 import requests
-import sys
+
 
 if __name__ == "__main__":
-    try:
-        req = requests.get(sys.argv[1])
+    req = requests.get(argv[1])
+
+    if req.status_code >= 400:
+        print('Error code:', req.status_code)
+    else:
         print(req.text)
-    except error.HTTPError:
-        print("Error code: {}".format(req.status_code))
