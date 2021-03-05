@@ -1,5 +1,4 @@
--- priviliges
--- Show grants for user_0d_1
+-- Lists all privileges of the MySQL Users `user_0d_1`
+-- and `user_0d_2` in `localhost`.
 SHOW GRANTS FOR 'user_0d_1'@'localhost';
--- Show grants for user_0d_2
 SHOW GRANTS FOR 'user_0d_2'@'localhost';
