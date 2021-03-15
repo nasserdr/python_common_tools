@@ -1,2 +1,3 @@
 // Insert a document of name Holberton school
+use school
 db.school.insert(name:'Holberton school')
