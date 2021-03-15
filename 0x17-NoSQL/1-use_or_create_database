@@ -1,0 +1,2 @@
+// Show or create a db called my_db
+use my_db
