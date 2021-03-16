@@ -1,5 +1,6 @@
-#!/usr/bin/python3
-"""return a list of docs
+#!/usr/bin/env python3
+"""
+return a list of docs
 """
 
 def list_all(mongo_collection):
