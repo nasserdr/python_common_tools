@@ -8,4 +8,5 @@ def top_students(mongo_collection):
     """
     returns all students sorted by average score
     """
-    return mongo_collection.find('students').sort("averageScore")
+    mongo_collection.update({'averageScore': {$avg: 'score'}})
+    mongo_collection.find({'_id':1, 'averageScore': 1}).sort('averageScore')
