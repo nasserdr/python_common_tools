@@ -9,5 +9,5 @@ def update_topics(mongo_collection, name, topics):
     changes all topics
     """
     query = {"name": name}
-    newvalues = {"$push": {"topics": topics}}
+    newvalues = {"$set": {"topics": topics}}
     mongo_collection.update_many(query, newvalues)
