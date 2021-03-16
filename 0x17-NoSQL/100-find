@@ -1,2 +1,2 @@
 // List all available databases (db or show dbs)
-db.school.find( { name : { $regex: ^Holberton } } )
+db.school.find( { name : { $regex: /^Holberton/ } } )
