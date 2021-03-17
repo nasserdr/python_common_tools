@@ -2,14 +2,13 @@
 """
 Rotate a 2D matrix
 """
-from copy import copy, deepcopy
 
 
 def rotate_2d_matrix(matrix):
     """
     Rotate a 2D matrix
     """
-    matrix1 = deepcopy(matrix)
+    matrix1 = [[l for l in s] for s in matrix]
     l = len(matrix)
     for i in range(0, l):
         for j in range(0, l):
