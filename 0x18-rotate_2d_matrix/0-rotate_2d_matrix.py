@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 """
-Rotate a 3D matrix
+Rotate a 2D matrix
 """
 from copy import copy, deepcopy
 
 
 def rotate_2d_matrix(matrix):
+    """
+    Rotate a 2D matrix
+    """
     matrix1 = deepcopy(matrix)
     l = len(matrix)
     for i in range(0, l):
