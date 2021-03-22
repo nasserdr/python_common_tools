@@ -3,8 +3,8 @@
 Create a Cache class
 """
 import redis
-import random
 import uuid
+
 
 class Cache:
     """
@@ -18,6 +18,9 @@ class Cache:
         self._redis.flushdb()
 
     def store(self, data):
+        """
+        takes data and store it with a key
+        """
         key = str(uuid.uuid1())
         self._redis.set(key, data)
         return key
