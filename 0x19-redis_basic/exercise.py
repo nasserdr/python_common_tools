@@ -27,4 +27,13 @@ class Cache:
         return str(key)
 
     def get(self, key: str, fn: Optional[Callable]):
-        self._redis.get(key)
+        if fn == None:
+            t = self._redis.get(key)
+            print(t)
+            print(type(t))
+            return t
+        else:
+            t = fn(self._redis.get(key))
+            print(t)
+            print(type(t))
+            return t
