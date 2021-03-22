@@ -4,7 +4,7 @@ Create a Cache class
 """
 import redis
 import random
-
+import uuid
 
 class Cache:
     """
@@ -14,10 +14,10 @@ class Cache:
         """
         Initialize the method init
         """
-        _redis = redis.Redis()
-        _redis.flushdb()
+        self._redis = redis.Redis()
+        self._redis.flushdb()
 
     def store(self, data):
-        r = random.getrandbits(32)
-        client = self._redis
-        return(client.set({r:data}))
+        key = str(uuid.uuid1())
+        self._redis.set(key, data)
+        return key
