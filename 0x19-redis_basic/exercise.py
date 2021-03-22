@@ -4,6 +4,7 @@ Create a Cache class
 """
 import redis
 import uuid
+from typing import Union
 
 
 class Cache:
